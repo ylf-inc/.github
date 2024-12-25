@@ -1,0 +1,61 @@
+name: 缺陷
+description: 务必按照模版描述缺陷内容.
+title: "BUG: <缺陷概要>"
+labels: ["缺陷", "待确认"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请想尽描述以便开发人员可以快速确认定位问题!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 问题描述
+      description: 请详细描述问题
+      placeholder: "比如 保存个人信息因为证件号空导致程序崩溃"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤
+      description: 请分步骤描述如何复现问题
+      placeholder: |
+        1. 打开什么
+        2. 填写...
+        3. 点击...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 正常应该是什么
+      description: 简明扼要地描述您期望发生的事情
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: '## 运行环境'
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统及版本
+      placeholder: ex. Windows 11
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: 应用系统版本
+      placeholder: ex. 3.1.1
+    validations:
+      required: true
+  - type: input
+    id: org-name
+    attributes:
+      label: 客户/机构名称
+      placeholder: ex. XXX医院
+    validations:
+      required: false

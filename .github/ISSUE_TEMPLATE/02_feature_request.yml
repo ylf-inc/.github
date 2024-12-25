@@ -1,0 +1,24 @@
+name: 需求
+description: 设计、规划一项产品模块/功能.
+title: "<需求概要>"
+labels: ["需求", "待确认"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        此模块/功能的设计方案、调研、功能范围等。除了描述需求外，还可以附上相关的设计图、流程图等，描述中的子功能尽量使用 [task lists] 列出方便拆解。
+  - type: textarea
+    id: feature-desc
+    attributes:
+      label: 描述
+      description: 请详细描述问题
+      value: |
+        1. 说明需求目的
+        2. 用例便于开发人员理解
+        3. 说明需求功能
+        - [ ] 子功能1
+        - [ ] 子功能2
+        - [ ] \(Optional) 子功能3
+    validations:
+      required: true

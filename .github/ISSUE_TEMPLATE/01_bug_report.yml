@@ -1,4 +1,4 @@
-name: 缺陷
+name: 缺陷(bug)
 description: 务必按照模版描述缺陷内容.
 title: "BUG: <缺陷概要>"
 labels: ["缺陷", "待确认"]

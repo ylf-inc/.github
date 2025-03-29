@@ -1,0 +1,21 @@
+name: 任务(task)
+description: 设计、规划一项产品模块/功能.
+title: "<开发任务>"
+type: "Task"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        需求确认后细分开发任务并制定计划。
+  - type: textarea
+    id: task-desc
+    attributes:
+      label: 描述
+      description: 描述任务要实现的功能，核心逻辑等
+      value: |
+        1. 任务内容
+        2. 核心逻辑
+        3. 注意事项
+    validations:
+      required: true

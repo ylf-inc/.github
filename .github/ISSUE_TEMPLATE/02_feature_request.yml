@@ -1,7 +1,8 @@
 name: 需求(feature)
 description: 设计、规划一项产品模块/功能.
 title: "<需求概要>"
-labels: ["需求", "待确认"]
+labels: ["待确认"]
+type: "Feature"
 
 body:
   - type: markdown

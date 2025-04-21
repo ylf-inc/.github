@@ -9,6 +9,13 @@ body:
     attributes:
       value: |
         请想尽描述以便开发人员可以快速确认定位问题!
+  - type: input
+    id: module
+    attributes:
+      label: 模块名称
+      placeholder: ex. 账户信息管理
+    validations:
+      required: false
   - type: textarea
     id: what-happened
     attributes:
